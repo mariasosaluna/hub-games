@@ -1,0 +1,110 @@
+@font-face {
+  font-family: 'press-start2';
+       src: url('./assets/PressStart2P-Regular.ttf')  format('truetype');
+       
+      
+}
+
+* {
+  margin: 0;
+  padding: 0;
+
+}
+
+html {
+  height: 100%;
+}
+body {
+  min-height: 100%;
+  background-color: rgba(127, 255, 212, 0.093);
+  padding: 20px;
+}
+
+#dashboard-title{
+  background-image: url(../hub-games/assets/game-background.jpeg);
+  padding: 10px;
+  border-radius: 10px;
+  display: flex;
+  margin: 20px auto;
+  width: fit-content;
+  color: white;
+  -webkit-box-shadow: -2px 1px 58px -4px rgba(255,255,255,1);
+  -moz-box-shadow: -2px 1px 58px -4px rgba(255,255,255,1);
+  box-shadow: -2px 1px 58px -4px rgba(255,255,255,1);
+  margin-top: 80px;
+  margin-bottom: 70px;
+}
+#main-container {
+  background-image: url(../hub-games/assets/game-background.jpeg);
+  width: 50%;
+  padding-bottom: 10%;
+  margin: auto;
+  border-radius: 20px;
+}
+#intro {
+  padding: 5rem;
+  margin: 2rem;
+  
+}
+
+h1 {
+  font-family: 'Orbitron', sans-serif;
+  display: flex;
+  justify-content: center;
+  font-size: 70px;
+  padding: 1rem;
+  color: white;
+}
+h2 {
+  font-size: 50px;
+  display: flex;
+  justify-content: center;
+  font-family: 'Orbitron', sans-serif;
+  color: white;
+}
+p {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 18px;
+  color: white;
+
+}
+.container-input{
+  text-align: center;
+  margin: auto;
+  width: 250px;
+}
+#input {
+  padding: 10px 0;
+  border-radius: 10px;
+  color: gray;
+  display: inline-block;
+  text-align: center;
+}
+#signUp {
+  border-radius: 10px;
+  display: inline-block;
+  padding: 3px;
+}
+
+.container-input > * {
+display: inline-block;
+width: 100%;
+margin-top: 10px;
+
+}
+#color-changer {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 1rem;
+  border-radius: 10px;
+  background: #f71818;
+  background: -moz-linear-gradient(left,  #f71818 0%, #f4b22e 20%, #c9b520 34%, #1cb533 50%, #00c47c 66%, #0063ce 81%, #a5299b 100%);
+  background: -webkit-linear-gradient(left,  #f71818 0%,#f4b22e 20%,#c9b520 34%,#1cb533 50%,#00c47c 66%,#0063ce 81%,#a5299b 100%);
+  background: linear-gradient(to right,  #f71818 0%,#f4b22e 20%,#c9b520 34%,#1cb533 50%,#00c47c 66%,#0063ce 81%,#a5299b 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f71818', endColorstr='#a5299b',GradientType=1 );
+  color: white;
+  padding: 5px;
+  float: left;
+
+}
+
+

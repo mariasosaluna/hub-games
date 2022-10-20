@@ -1,0 +1,169 @@
+.pokemon-container {
+    font-family: 'press-start2';
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
+    align-items: stretch;
+    margin: 20px;
+}
+
+@media (max-width: 850px) {
+    .pokemon-container {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 600px) {
+    .pokemon-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+.hidden {
+    display: none;
+}
+.pokemon-card {
+    margin: 10px;
+    border-radius: 10px;
+    padding: 20px;
+    -webkit-box-shadow: 10px 13px 16px -1px rgba(0,0,0,0.54);
+    -moz-box-shadow: 10px 13px 16px -1px rgba(0,0,0,0.54);
+    box-shadow: 10px 13px 16px -1px rgba(0,0,0,0.54);
+    height: 200px;
+    transition: all .2s ease-in-out;
+   
+}
+.pokemon-card:hover{
+    transform: scale(1.1);
+}
+.pokemon-card .name{
+    background-color: white;
+    margin-top: 5px;
+    border-radius: 5px;
+    padding: 5px;
+    text-align: center;
+}
+
+.pokemon-card .pokemon-id {
+    background-color: white;
+    border-radius: 100%;
+    padding: 5px;
+    display: inline-block;
+}
+
+.pokemon-card img {
+    display: block;
+    margin: auto;
+}
+
+
+.pokemon-weight, .pokemon-types {
+    text-shadow: 3px 1px 5px white;
+}
+
+.grass {
+    background: #c9de96;
+    background: -moz-linear-gradient(top,  #c9de96 0%, #8ab66b 44%, #398235 100%);
+    background: -webkit-linear-gradient(top,  #c9de96 0%,#8ab66b 44%,#398235 100%);
+    background: linear-gradient(to bottom,  #c9de96 0%,#8ab66b 44%,#398235 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c9de96', endColorstr='#398235',GradientType=0 );
+}
+.fire {
+    background: #ffa84c;
+    background: -moz-linear-gradient(top,  #ffa84c 0%, #ff7b0d 100%);
+    background: -webkit-linear-gradient(top,  #ffa84c 0%,#ff7b0d 100%);
+    background: linear-gradient(to bottom,  #ffa84c 0%,#ff7b0d 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffa84c', endColorstr='#ff7b0d',GradientType=0 );
+}
+.water {
+    background: #a9e4f7;
+    background: -moz-linear-gradient(top,  #a9e4f7 0%, #0fb4e7 100%);
+    background: -webkit-linear-gradient(top,  #a9e4f7 0%,#0fb4e7 100%);
+    background: linear-gradient(to bottom,  #a9e4f7 0%,#0fb4e7 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a9e4f7', endColorstr='#0fb4e7',GradientType=0 );
+}
+.bug {
+    background: #f5f6f6;
+    background: -moz-linear-gradient(top,  #f5f6f6 0%, #dbdce2 21%, #b8bac6 49%, #dddfe3 80%, #f5f6f6 100%);
+    background: -webkit-linear-gradient(top,  #f5f6f6 0%,#dbdce2 21%,#b8bac6 49%,#dddfe3 80%,#f5f6f6 100%);
+    background: linear-gradient(to bottom,  #f5f6f6 0%,#dbdce2 21%,#b8bac6 49%,#dddfe3 80%,#f5f6f6 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f5f6f6', endColorstr='#f5f6f6',GradientType=0 );
+}
+.normal {
+    background: #f6e6b4;
+    background: -moz-linear-gradient(top,  #f6e6b4 0%, #ed9017 100%);
+    background: -webkit-linear-gradient(top,  #f6e6b4 0%,#ed9017 100%);
+    background: linear-gradient(to bottom,  #f6e6b4 0%,#ed9017 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f6e6b4', endColorstr='#ed9017',GradientType=0 );
+    
+}
+.poison {
+    background: #61b79d;
+    background: -moz-linear-gradient(top,  #61b79d 0%, #a93ded 100%);
+    background: -webkit-linear-gradient(top,  #61b79d 0%,#a93ded 100%);
+    background: linear-gradient(to bottom,  #61b79d 0%,#a93ded 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#61b79d', endColorstr='#a93ded',GradientType=0 );   
+}
+.electric {
+    background: #f9f2e0;
+    background: -moz-linear-gradient(-45deg,  #f9f2e0 0%, #fccd4d 50%, #f8b500 51%, #f9ee52 100%);
+    background: -webkit-linear-gradient(-45deg,  #f9f2e0 0%,#fccd4d 50%,#f8b500 51%,#f9ee52 100%);
+    background: linear-gradient(135deg,  #f9f2e0 0%,#fccd4d 50%,#f8b500 51%,#f9ee52 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f9f2e0', endColorstr='#f9ee52',GradientType=1 );
+}
+.ground {
+    background: #f6e6b4;
+    background: -moz-linear-gradient(top,  #f6e6b4 0%, #b27c11 100%);
+    background: -webkit-linear-gradient(top,  #f6e6b4 0%,#b27c11 100%);
+    background: linear-gradient(to bottom,  #f6e6b4 0%,#b27c11 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f6e6b4', endColorstr='#b27c11',GradientType=0 );
+}
+.fairy {
+    background: #fce5e5;
+    background: -moz-linear-gradient(top,  #fce5e5 0%, #fe9090 45%, #ffaaef 100%);
+    background: -webkit-linear-gradient(top,  #fce5e5 0%,#fe9090 45%,#ffaaef 100%);
+    background: linear-gradient(to bottom,  #fce5e5 0%,#fe9090 45%,#ffaaef 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fce5e5', endColorstr='#ffaaef',GradientType=0 );
+}
+.fighting {
+    background: #ed7188;
+    background: -moz-linear-gradient(top,  #ed7188 0%, #ba326a 100%);
+    background: -webkit-linear-gradient(top,  #ed7188 0%,#ba326a 100%);
+    background: linear-gradient(to bottom,  #ed7188 0%,#ba326a 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ed7188', endColorstr='#ba326a',GradientType=0 );
+}
+.psychic {
+    background: #feffff;
+    background: -moz-linear-gradient(top,  #feffff 0%, #b2b297 100%);
+    background: -webkit-linear-gradient(top,  #feffff 0%,#b2b297 100%);
+    background: linear-gradient(to bottom,  #feffff 0%,#b2b297 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#feffff', endColorstr='#b2b297',GradientType=0 );
+}
+.rock {
+    background: #e8dec2;
+    background: -moz-linear-gradient(top,  #e8dec2 0%, #a0863e 100%);
+    background: -webkit-linear-gradient(top,  #e8dec2 0%,#a0863e 100%);
+    background: linear-gradient(to bottom,  #e8dec2 0%,#a0863e 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e8dec2', endColorstr='#a0863e',GradientType=0 );
+}
+.ghost {
+    background: #e1c9e2;
+    background: -moz-linear-gradient(top,  #e1c9e2 0%, #c85ec7 47%, #c05be5 100%);
+    background: -webkit-linear-gradient(top,  #e1c9e2 0%,#c85ec7 47%,#c05be5 100%);
+    background: linear-gradient(to bottom,  #e1c9e2 0%,#c85ec7 47%,#c05be5 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e1c9e2', endColorstr='#c05be5',GradientType=0 );
+}
+.ice {
+    background: #eff5f9;
+    background: -moz-linear-gradient(top,  #eff5f9 0%, #9ff0f9 100%);
+    background: -webkit-linear-gradient(top,  #eff5f9 0%,#9ff0f9 100%);
+    background: linear-gradient(to bottom,  #eff5f9 0%,#9ff0f9 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eff5f9', endColorstr='#9ff0f9',GradientType=0 );
+}
+.dragon {
+    background: #ffe2e2de;
+    background: -moz-linear-gradient(top,  #ffe2e2 0%, #e52020 100%);
+    background: -webkit-linear-gradient(top,  #ffe2e2 0%,#e52020 100%);
+    background: linear-gradient(to bottom,  #ffe2e2 0%,#e52020 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffe2e2', endColorstr='#e52020',GradientType=0 );
+}
