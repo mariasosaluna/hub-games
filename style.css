@@ -1,8 +1,6 @@
 @font-face {
   font-family: 'press-start2';
        src: url('./assets/PressStart2P-Regular.ttf')  format('truetype');
-       
-      
 }
 
 * {
@@ -33,6 +31,7 @@ body {
   box-shadow: -2px 1px 58px -4px rgba(255,255,255,1);
   margin-top: 80px;
   margin-bottom: 70px;
+  text-align: center;
 }
 #main-container {
   background-image: url(../hub-games/assets/game-background.jpeg);
@@ -41,6 +40,16 @@ body {
   margin: auto;
   border-radius: 20px;
 }
+@media (max-width: 600px) {
+  #main-container {
+      width: 100%;
+  }
+  #dashboard-title {
+    width: 100%;
+    font-size: 3rem;
+  }
+}
+  
 #intro {
   padding: 5rem;
   margin: 2rem;
