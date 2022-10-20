@@ -47,12 +47,17 @@ export const loadPokemon = async () => {
   const typeSelect = document.createElement('select');
   const basicOption = document.createElement('option');
   const searchInput = document.createElement('input');
+  const inputContainer = document.createElement('div');
+  inputContainer.classList.add('input-container');
+
   typeSelect.classList.add('typeSelect');
   searchInput.classList.add('searchInput');
   basicOption.value = '';
   basicOption.innerHTML = 'All types';
   searchInput.placeholder = 'search your pokemon';
   typeSelect.appendChild(basicOption);
+  inputContainer.appendChild(typeSelect);
+  inputContainer.appendChild(searchInput);
 
   pokemonTypes.forEach((type) => {
     const option = document.createElement('option');
@@ -61,8 +66,7 @@ export const loadPokemon = async () => {
     typeSelect.appendChild(option);
   });
 
-  app.appendChild(typeSelect);
-  app.appendChild(searchInput);
+  app.appendChild(inputContainer);
   app.appendChild(pokemonContainer);
   let optionSelected = '';
   let optionInput = '';
