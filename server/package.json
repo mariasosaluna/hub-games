@@ -1,13 +1,17 @@
 {
-  "name": "server",
-  "version": "1.0.0",
-  "description": "",
+  "name": "metal-gear-server",
+  "version": "0.0.0",
+  "description": "...",
   "main": "index.js",
   "scripts": {
-    "dev": "node index.js"
+    "start": "json-server --watch db.json"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "json-server",
+    "metal gear",
+    "javascript"
+  ],
+  "author": "Alberto & Antonio",
   "license": "ISC",
   "dependencies": {
     "json-server": "^0.17.0"
