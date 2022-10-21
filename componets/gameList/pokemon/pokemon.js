@@ -25,6 +25,7 @@ export const loadPokemon = async () => {
     const pokemon = document.createElement('div');
     pokemon.classList.add('pokemon-card');
     pokemon.classList.add(pokemonItem.types[0].type.name);
+
     const types = pokemonItem.types.map((item) => {
       pokemonTypes.push(item.type.name);
       return item.type.name;

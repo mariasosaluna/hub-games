@@ -1,3 +1,4 @@
+//Esta es la pagina principal donde importamos el resto de funcionalidad y
 import './style.css';
 import './componets/login';
 import './componets/random-color';
