@@ -27,7 +27,6 @@ const printNextButton = (
     );
     nextQuestion.classList.remove('hidden');
     questionContainer.classList.add('hidden');
-    console.log('siguiente');
   });
   divResultado.appendChild(nextButton);
 };
@@ -78,7 +77,7 @@ export const initQuiz = async () => {
       input.addEventListener('change', (event) => {
         if (event.target.value == questionItem.correctAnswer) {
           divResultado.innerHTML =
-            '<div class="correct">Correcto!</div>';
+            '<div class="correct">Enhorabuena!! Has acertado</div>';
 
           if (questionIndex < dataQuestions.length - 1) {
             printNextButton(
@@ -90,17 +89,17 @@ export const initQuiz = async () => {
             printResult(failsCounter);
           }
         } else {
-          divResultado.innerHTML = 'Has fallado!';
+          divResultado.innerHTML =
+            '<div class="fail">Has fallado! Inténtalo de nuevo</div>';
           failsCounter++;
         }
+        questionContainer.appendChild(divResultado);
       });
 
       divInput.appendChild(input);
       divInput.appendChild(label);
-
       questionContainer.appendChild(divInput);
     });
-    questionContainer.appendChild(divResultado);
 
     quiz.appendChild(questionContainer);
   });
