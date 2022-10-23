@@ -1,15 +1,21 @@
 import './gameListStyle.css';
-import { loadPokemon } from './pokemon/pokemon';
+import { initPokemon } from './pokemon/pokemon';
+import { initQuiz } from './quiz-game/quiz';
 
-const games = [{ id: 'pokeapi', name: 'Poke api' }];
+const games = [
+  { id: 'pokeapi', name: 'Poke api' },
+  { id: 'quiz-game', name: 'Friki quiz' },
+];
 const comeBack = document.querySelector('#home');
-
+//Esta funcion es para volver al tablero de juegos
 comeBack.addEventListener('click', (event) => {
   loadDashboard();
 });
-
+//treigo el div contenedor de juegos app
 const loadDashboard = () => {
   const app = document.getElementById('app');
+  const gameListContainer = document.createElement('div');
+  gameListContainer.classList.add('game-list-container');
   if (app) {
     app.innerHTML = '';
     games.forEach((game) => {
@@ -20,10 +26,15 @@ const loadDashboard = () => {
 
       card.addEventListener('click', async () => {
         app.innerHTML = '';
-        loadPokemon();
+        if (game.id == 'pokeapi') {
+          initPokemon();
+        }
+        if (game.id == 'quiz-game') {
+          initQuiz();
+        }
       });
-
-      app.appendChild(card);
+      gameListContainer.appendChild(card);
+      app.appendChild(gameListContainer);
     });
   }
 };

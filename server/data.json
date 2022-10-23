@@ -1,5 +1,5 @@
 {
-  "breeds": [
+  "questions": [
     { 
       "id": 1, 
       "question": "Quién besa a Boromir en la fente antes de morir?", 
@@ -30,7 +30,7 @@
      {
       "id": 6, 
       "question": "Cuales son las 3 palabras con las que inicia la película de Las Dos Torres?", 
-      "correctAnswer": "No puedes pasar",
+      "correctAnswer": "No puedes pasar!",
       "answers": ["Tíralo al fuego!" , "No puedes pasar!" , "Espere señor Frodo!" , "Mi tesoro...sí!!" ]
      },{
       "id": 7, 

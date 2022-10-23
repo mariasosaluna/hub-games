@@ -9,3 +9,9 @@ if (signUp) {
     }
   });
 }
+const logOut = document.getElementById('logout');
+if (logOut) {
+  logOut.addEventListener('click', (event) => {
+    window.location.assign('/index.html');
+  });
+}
